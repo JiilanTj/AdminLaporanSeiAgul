@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PengaduanActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:background="@color/textViewBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <ImageView
+        android:id="@+id/imageLaporan"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/dummyicon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_tanggapi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="16dp"
+        android:text="Tanggapi"
+        android:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/imageLaporan"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageLaporan" />
+
+    <Button
+        android:id="@+id/btn_tolak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Tolak"
+        android:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toEndOf="@+id/btn_tanggapi"
+        app:layout_constraintTop_toBottomOf="@+id/imageLaporan" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lokasi"
+        android:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_tolak"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="@+id/btn_tanggapi"
+        app:layout_constraintTop_toBottomOf="@+id/imageLaporan" />
+
+    <TextView
+        android:id="@+id/Nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="nama :"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.129" />
+
+    <TextView
+        android:id="@+id/Kategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kategori :"
+        app:layout_constraintBottom_toTopOf="@+id/keterangan"
+        app:layout_constraintEnd_toEndOf="@+id/Nama"
+        app:layout_constraintStart_toStartOf="@+id/Nama"
+        app:layout_constraintTop_toBottomOf="@+id/Nama"
+        app:layout_constraintVertical_bias="0.51" />
+
+    <TextView
+        android:id="@+id/keterangan"
+        android:layout_width="79dp"
+        android:layout_height="20dp"
+        android:text="Keterangan :"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/Kategori"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/Kategori"
+        app:layout_constraintTop_toTopOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.465" />
+
+    <TextView
+        android:id="@+id/isiNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jiilan"
+        app:layout_constraintBottom_toBottomOf="@+id/Nama"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/Nama"
+        app:layout_constraintTop_toTopOf="@+id/Nama" />
+
+    <TextView
+        android:id="@+id/isiKategori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sampah"
+        app:layout_constraintBottom_toBottomOf="@+id/Kategori"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toEndOf="@+id/Kategori"
+        app:layout_constraintTop_toTopOf="@+id/Kategori" />
+
+    <TextView
+        android:id="@+id/IsiKeterangan"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non metus urna. In vel nunc pretium, feugiat massa ut, aliquam augue. Quisque sit amet dolor lectus. Duis venenatis ac nunc eu pharetra."
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/keterangan"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/keterangan"
+        app:layout_constraintTop_toBottomOf="@+id/keterangan"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

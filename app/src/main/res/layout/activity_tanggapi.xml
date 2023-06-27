@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TanggapiActivity">
+
+    <ImageButton
+        android:id="@+id/btnWeb"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/imgtrap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <EditText
+        android:id="@+id/urlSelesai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Masukan url"
+        android:inputType="text"
+        android:fontFamily="@font/poppinssemibold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnWeb"
+        app:layout_constraintStart_toStartOf="@+id/btnWeb"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeb"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selesai"
+        android:fontFamily="@font/poppinsregular"
+        android:background="@drawable/button_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/urlSelesai"
+        app:layout_constraintStart_toStartOf="@+id/urlSelesai"
+        app:layout_constraintTop_toBottomOf="@+id/urlSelesai"
+        app:layout_constraintVertical_bias="0.110000014" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

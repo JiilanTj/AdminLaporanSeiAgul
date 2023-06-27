@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".DashboardActivity">
+
+    <TextView
+        android:id="@+id/Home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinssemibold"
+        android:text="Home"
+        android:textColor="#000"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Home"
+        app:layout_constraintVertical_bias="0.07999998">
+
+        <!-- Dropdown 1 (Biru) -->
+        <Button
+            android:id="@+id/btnProses"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Laporan di Proses"
+            android:fontFamily="@font/poppinssemibolditalic"
+            android:background="@android:color/holo_blue_light" />
+
+        <!-- Dropdown 2 (Merah) -->
+        <Button
+            android:id="@+id/btnDitolak"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Laporan di Tolak"
+            android:fontFamily="@font/poppinssemibolditalic"
+            android:background="@android:color/holo_red_light" />
+
+        <!-- Dropdown 3 (Kuning) -->
+        <Button
+            android:id="@+id/btnSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Laporan Selesai"
+            android:fontFamily="@font/poppinssemibolditalic"
+            android:background="@android:color/holo_orange_light" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.86">
+
+        <Button
+            android:id="@+id/buttonPengguna"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            style="@style/ButtonStyle"
+            android:drawableLeft="@drawable/baseline_supervised_user_circle_24"
+            android:text="User" />
+
+        <Button
+            android:id="@+id/buttonLaporan"
+            style="@style/ButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:drawableLeft="@drawable/baseline_attach_file_24"
+            android:fontFamily="@font/poppinssemibold"
+            android:text="Laporan" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.86">
+
+        <Button
+            android:id="@+id/buttonAduan"
+            style="@style/ButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:drawableLeft="@drawable/baseline_report_24"
+            android:text="Aduan" />
+
+        <Button
+            android:id="@+id/buttonHome"
+            style="@style/ButtonStyle"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:drawableLeft="@drawable/baseline_picture_as_pdf_24"
+            android:text="cetak" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
